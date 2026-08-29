@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>M.M 여행 — 대학생 방학 해외여행</title>
+<meta name="description" content="대학생 방학 해외여행, 물어볼 데가 없어서 못 갔다면. 메이저 여행사 상품을 대학생 눈높이로 골라 상담까지 연결해 드립니다.">
+<meta property="og:title" content="M.M 여행 — 대학생 방학 해외여행">
+<meta property="og:description" content="종강 다음 주 출발, 개강 전 귀국. 대학생 눈높이로 고른 겨울방학 패키지.">
+<meta property="og:type" content="website">
+<!-- 🔴 리허설 기간 전용: 검색엔진 색인 차단. 오픈일(9/22) 등록번호 반영 후 이 두 줄을 삭제하십시오 -->
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================
+   M.M 여행 — 소개 페이지
+   GitHub Pages 정적 호스팅용 · 외부 라이브러리 없음
+   ============================================================ */
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1a1815; --ink2:#55504a; --ink3:#8b8579;
+  --line:#e8e3db; --line2:#f2eee8;
+  --brand:#0f5f52; --brand-soft:#e4f2ee; --brand-deep:#0a4238;
+  --accent:#c2410c; --accent-soft:#fdf0e8;
+  --gold:#8a6410; --gold-soft:#fbf3e0;
+  --shadow:0 1px 2px rgba(26,24,21,.05), 0 10px 28px rgba(26,24,21,.07);
+  --radius:16px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#14120f; --panel:#1d1a16; --ink:#f0ece5; --ink2:#b5aea3; --ink3:#847d72;
+    --line:#302b25; --line2:#26221d;
+    --brand:#5cc4b0; --brand-soft:#12302b; --brand-deep:#7ad6c4;
+    --accent:#f0834f; --accent-soft:#2d1a11;
+    --gold:#dfb45e; --gold-soft:#2a2214;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.4);
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.7;font-size:16px;letter-spacing:-.014em;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden}
+img{max-width:100%}
+a{color:inherit}
+.wrap{max-width:640px;margin:0 auto;padding:0 18px}
+
+/* ---------- 상단 고지 바 ---------- */
+.topbar{background:var(--brand-deep);color:#fff;font-size:12.5px;text-align:center;padding:9px 16px;line-height:1.5}
+@media (prefers-color-scheme: dark){.topbar{background:#0d2925;color:#cfe9e3}}
+.topbar b{font-weight:700}
+
+/* ---------- 히어로 ---------- */
+.hero{padding:44px 0 38px;text-align:center}
+.logo{font-size:13px;font-weight:800;letter-spacing:.22em;color:var(--brand)}
+h1{font-size:clamp(27px,7.4vw,38px);line-height:1.3;margin:14px 0 14px;font-weight:800;letter-spacing:-.035em}
+h1 .hl{color:var(--brand)}
+.sub{color:var(--ink2);font-size:16px;margin:0 auto 26px;max-width:34ch}
+.cta{display:inline-block;background:var(--brand);color:#fff;font-weight:800;font-size:16.5px;
+  padding:15px 34px;border-radius:999px;text-decoration:none;box-shadow:var(--shadow)}
+@media (prefers-color-scheme: dark){.cta{color:#0f1412}}
+.cta:active{transform:translateY(1px)}
+.ctanote{font-size:12.5px;color:var(--ink3);margin-top:11px}
+
+/* ---------- 이유 3 ---------- */
+.why{display:grid;gap:11px;margin:38px 0}
+.w{display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);
+   border-radius:14px;padding:15px 17px;box-shadow:var(--shadow)}
+.w .ic{font-size:22px;flex:none;line-height:1.3}
+.w .wt{font-weight:800;font-size:15.5px}
+.w .wd{font-size:14px;color:var(--ink2);margin-top:2px}
+
+/* ---------- 섹션 ---------- */
+.sec{margin:46px 0}
+.sechead{text-align:center;margin-bottom:22px}
+.sechead .st{font-size:22px;font-weight:800;letter-spacing:-.03em}
+.sechead .ss{font-size:14px;color:var(--ink3);margin-top:4px}
+
+/* ---------- 상품 카드 ---------- */
+.cards{display:grid;gap:15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow)}
+.card .thumb{height:130px;display:flex;align-items:center;justify-content:center;
+  font-size:46px;background:var(--brand-soft)}
+.card.c2 .thumb{background:var(--accent-soft)}
+.card.c3 .thumb{background:var(--gold-soft)}
+.card.c4 .thumb{background:#eef0f6}
+.card.c5 .thumb{background:#f3ecf7}
+@media (prefers-color-scheme: dark){
+  .card.c4 .thumb{background:#1c2029}
+  .card.c5 .thumb{background:#241c2b}
+}
+.card .body{padding:17px 18px 18px}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
+.tag{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:6px;
+  background:var(--brand-soft);color:var(--brand)}
+.tag.hot{background:var(--accent-soft);color:var(--accent)}
+.tag.grad{background:var(--gold-soft);color:var(--gold)}
+.card h3{font-size:19px;font-weight:800;margin:0 0 3px;letter-spacing:-.028em}
+.card .meta{font-size:13.5px;color:var(--ink3);font-weight:600}
+.price{display:flex;align-items:baseline;gap:7px;margin:12px 0 11px}
+.price .p{font-size:24px;font-weight:800;letter-spacing:-.035em}
+.price .u{font-size:13px;color:var(--ink3);font-weight:600}
+.note{background:var(--bg);border-radius:11px;padding:12px 14px;font-size:13.8px;
+  color:var(--ink2);border-left:3px solid var(--brand)}
+.note b{color:var(--ink);font-weight:700}
+.btn{display:block;text-align:center;margin-top:14px;background:var(--brand);color:#fff;
+  font-weight:800;font-size:15.5px;padding:13px;border-radius:11px;text-decoration:none}
+@media (prefers-color-scheme: dark){.btn{color:#0f1412}}
+.btn:active{transform:translateY(1px)}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:9px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:13px;
+  box-shadow:var(--shadow);overflow:hidden}
+summary{cursor:pointer;padding:15px 17px;font-weight:700;font-size:15.5px;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:19px;color:var(--ink3);font-weight:700;flex:none}
+details[open] summary::after{content:"−"}
+details .ans{padding:0 17px 16px;font-size:14.5px;color:var(--ink2)}
+
+/* ---------- 하단 CTA ---------- */
+.endcta{background:var(--brand-soft);border-radius:var(--radius);padding:30px 22px;text-align:center;margin:46px 0}
+.endcta .et{font-size:20px;font-weight:800;letter-spacing:-.03em}
+.endcta .ed{font-size:14.5px;color:var(--ink2);margin:8px 0 18px}
+
+/* ---------- 푸터 ---------- */
+footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 46px;
+  font-size:12.5px;color:var(--ink3);line-height:1.8}
+.legal{background:var(--panel);border:1px solid var(--line);border-radius:13px;
+  padding:15px 17px;margin-bottom:18px;font-size:13px;color:var(--ink2)}
+.legal b{color:var(--ink);font-weight:700}
+footer a{color:var(--ink2);text-decoration:underline;text-underline-offset:3px}
+.flinks{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px}
+
+/* ---------- 스티키 버튼 ---------- */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+  background:linear-gradient(to top,var(--bg) 70%,transparent);z-index:50;
+  transform:translateY(120%);transition:transform .25s ease}
+.sticky.on{transform:translateY(0)}
+.sticky a{display:block;max-width:604px;margin:0 auto;text-align:center;background:var(--brand);
+  color:#fff;font-weight:800;font-size:16px;padding:15px;border-radius:999px;
+  text-decoration:none;box-shadow:0 6px 20px rgba(15,95,82,.3)}
+@media (prefers-color-scheme: dark){.sticky a{color:#0f1412}}
+body{padding-bottom:78px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  본 사이트의 여행상품 판매·계약 주체는 <b>노랑풍선</b>(관광사업등록번호 <span id="regno1">○○-○○○○</span>)입니다
+</div>
+
+<div class="wrap">
+
+  <!-- ================= 히어로 ================= -->
+  <div class="hero">
+    <div class="logo">M · M &nbsp;T R A V E L</div>
+    <h1>방학 때 해외 가고 싶은데<br><span class="hl">물어볼 데가 없었다면</span></h1>
+    <p class="sub">메이저 여행사 패키지를 대학생 눈높이로 골라,
+      카톡 상담까지 연결해 드립니다.</p>
+    <a class="cta" href="#products">겨울방학 상품 보기</a>
+    <div class="ctanote">신청은 무료 · 상담 후 결정하셔도 됩니다</div>
+  </div>
+
+  <!-- ================= 왜 우리인가 ================= -->
+  <div class="why">
+    <div class="w">
+      <div class="ic">📅</div>
+      <div><div class="wt">종강 다음 주 출발, 개강 전 귀국</div>
+      <div class="wd">학사일정에 맞는 날짜만 골라서 보여드립니다.</div></div>
+    </div>
+    <div class="w">
+      <div class="ic">💬</div>
+      <div><div class="wt">전화 대신 카톡으로 상담</div>
+      <div class="wd">여행사 실장님이 직접 카톡으로 답해 드립니다.</div></div>
+    </div>
+    <div class="w">
+      <div class="ic">🧾</div>
+      <div><div class="wt">현지에서 더 나가는 돈까지 미리</div>
+      <div class="wd">가이드비·선택관광 등 실제 총액을 상담 때 알려드립니다.</div></div>
+    </div>
+  </div>
+
+  <!-- ================= 상품 ================= -->
+  <div class="sec" id="products">
+    <div class="sechead">
+      <div class="st">2027년 1~2월 출발</div>
+      <div class="ss">대학생이 많이 찾는 5개만 골랐습니다</div>
+    </div>
+
+    <div class="cards">
+
+      <!-- 상품 1 -->
+      <div class="card c1">
+        <div class="thumb">🏖️</div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">동남아</span><span class="tag hot">인기</span></div>
+          <h3>다낭 · 호이안 5일</h3>
+          <div class="meta">베트남 · 4박 5일 · 인천 출발</div>
+          <div class="price"><span class="p">890,000</span><span class="u">원~ / 1인</span></div>
+          <div class="note"><b>첫 해외라면 여기부터.</b> 비행 5시간, 시차 2시간이라 몸이 안 힘듭니다. 호이안 야경은 사진이 잘 나옵니다.</div>
+          <a class="btn" href="#" data-product="다낭·호이안 5일">상담 신청하기</a>
+        </div>
+      </div>
+
+      <!-- 상품 2 -->
+      <div class="card c2">
+        <div class="thumb">🛕</div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">동남아</span><span class="tag hot">가성비</span></div>
+          <h3>방콕 · 파타야 5일</h3>
+          <div class="meta">태국 · 4박 5일 · 인천 출발</div>
+          <div class="price"><span class="p">790,000</span><span class="u">원~ / 1인</span></div>
+          <div class="note"><b>같은 예산으로 가장 많이 보는 코스.</b> 야시장·마사지·수상시장까지 하루가 꽉 찹니다.</div>
+          <a class="btn" href="#" data-product="방콕·파타야 5일">상담 신청하기</a>
+        </div>
+      </div>
+
+      <!-- 상품 3 -->
+      <div class="card c3">
+        <div class="thumb">🥥</div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">동남아</span><span class="tag">휴양</span></div>
+          <h3>나트랑 5일</h3>
+          <div class="meta">베트남 · 4박 5일 · 인천 출발</div>
+          <div class="price"><span class="p">850,000</span><span class="u">원~ / 1인</span></div>
+          <div class="note"><b>일정이 널널합니다.</b> 종강하고 아무것도 안 하고 싶을 때. 리조트에서 하루 종일 있어도 본전입니다.</div>
+          <a class="btn" href="#" data-product="나트랑 5일">상담 신청하기</a>
+        </div>
+      </div>
+
+      <!-- 상품 4 -->
+      <div class="card c4">
+        <div class="thumb">🏯</div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">일본</span><span class="tag">단기</span></div>
+          <h3>오사카 · 교토 4일</h3>
+          <div class="meta">일본 · 3박 4일 · 인천 출발</div>
+          <div class="price"><span class="p">650,000</span><span class="u">원~ / 1인</span></div>
+          <div class="note"><b>방학이 짧거나 알바 사이에 낄 때.</b> 3박이면 주말 끼고 다녀올 수 있습니다.</div>
+          <a class="btn" href="#" data-product="오사카·교토 4일">상담 신청하기</a>
+        </div>
+      </div>
+
+      <!-- 상품 5 -->
+      <div class="card c5">
+        <div class="thumb">🗼</div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">유럽</span><span class="tag grad">졸업여행</span></div>
+          <h3>서유럽 3국 9일</h3>
+          <div class="meta">프랑스 · 스위스 · 이탈리아 · 7박 9일</div>
+          <div class="price"><span class="p">2,990,000</span><span class="u">원~ / 1인</span></div>
+          <div class="note"><b>졸업 전에 한 번은.</b> 취업하면 9일을 통으로 비우기가 어렵습니다. 학생일 때가 제일 쌉니다.</div>
+          <a class="btn" href="#" data-product="서유럽 3국 9일">상담 신청하기</a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;font-size:12.5px;color:var(--ink3);margin-top:16px">
+      가격은 출발일·유류할증료에 따라 달라집니다. 정확한 금액은 상담 시 안내드립니다.<br>
+      상품 제공 : 하나투어 · 모두투어 등 · 판매 : 노랑풍선
+    </div>
+  </div>
+
+  <!-- ================= FAQ ================= -->
+  <div class="sec">
+    <div class="sechead"><div class="st">자주 묻는 질문</div></div>
+    <div class="faq">
+      <details>
+        <summary>신청하면 바로 결제되나요?</summary>
+        <div class="ans">아닙니다. 신청은 <b>상담 요청</b>이고 비용이 발생하지 않습니다.
+          여행사 담당자가 연락드려 일정·금액을 안내한 뒤, 결정하시면 그때 예약이 진행됩니다.
+          결제는 노랑풍선을 통해 이루어지며 본 사이트에서는 결제를 받지 않습니다.</div>
+      </details>
+      <details>
+        <summary>혼자 신청해도 되나요?</summary>
+        <div class="ans">가능합니다. 다만 패키지는 보통 2인 1실 기준이라 1인 추가요금이 붙을 수 있습니다.
+          상담 때 <b>혼자 간다고 말씀</b>해 주시면 1인실 요금이나 다른 방법을 함께 확인해 드립니다.</div>
+      </details>
+      <details>
+        <summary>연락은 언제, 어떻게 오나요?</summary>
+        <div class="ans">영업일 기준 1일 이내에 <b>카카오톡 또는 전화</b>로 연락드립니다.
+          전화 받기 어려우시면 신청서에 카카오톡 ID를 적어주세요. 카톡으로 먼저 연락드립니다.</div>
+      </details>
+      <details>
+        <summary>부모님 동의가 필요한가요?</summary>
+        <div class="ans">만 19세 미만이시라면 여행 계약 시 법정대리인 동의가 필요합니다.
+          상담 단계에서는 필요 없으니 편하게 문의하셔도 됩니다.</div>
+      </details>
+      <details>
+        <summary>여기는 어떤 회사인가요?</summary>
+        <div class="ans">본 사이트는 대학생에게 여행상품을 소개하고 상담을 연결하는 <b>통신판매중개자</b>입니다.
+          여행상품의 판매·계약·발권은 관광사업 등록을 갖춘 <b>노랑풍선</b>이 담당하며,
+          본 사이트는 여행계약의 당사자가 아닙니다.</div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ================= 하단 CTA ================= -->
+  <div class="endcta">
+    <div class="et">일단 물어보는 건 공짜입니다</div>
+    <div class="ed">가격만 확인하고 안 가셔도 괜찮습니다.<br>부담 없이 문의해 주세요.</div>
+    <a class="cta" href="#" id="endBtn">상담 신청하기</a>
+  </div>
+
+  <!-- ================= 푸터 ================= -->
+  <footer>
+    <div class="legal">
+      <b>본 사이트는 통신판매중개자이며 여행계약의 당사자가 아닙니다.</b><br>
+      여행상품의 판매·계약·결제·발권 및 그에 따른 책임은
+      <b>노랑풍선</b>(관광사업등록번호 <span id="regno2">○○-○○○○</span>)에 있습니다.<br>
+      상품 정보는 하나투어·모두투어 등 공급사 자료를 기준으로 하며,
+      실제 조건은 계약 시점의 공급사 약관을 따릅니다.
+    </div>
+    M.M Travel · 대학생 방학 해외여행 소개
+    <div class="flinks">
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="privacy.html#terms">이용약관</a>
+    </div>
+  </footer>
+
+</div>
+
+<div class="sticky" id="sticky"><a href="#products">겨울방학 상품 보기</a></div>
+
+<script>
+/* ============================================================
+   설정 — 아래 3개만 실제 값으로 바꾸면 됩니다
+   ① FORM_ID        : 구글폼 공개 URL의 /d/e/ 뒤 긴 문자열
+   ② ENTRY_PRODUCT  : "상품명" 문항의 entry.숫자
+   ③ ENTRY_SOURCE   : "유입경로" 문항의 entry.숫자
+   (사전 채움 링크 얻는 법은 세팅 가이드 4단계 참고)
+   ============================================================ */
+var FORM_ID       = '1FAIpQLSe4qujw3ax-nQTpaYc3xOnY3a1rHvvQgO7ue_DS8Y3ZGh9lXg';
+var ENTRY_PRODUCT = 'entry.1927988060';   // 신청 상품
+var ENTRY_SOURCE  = 'entry.870849258';    // 접수코드(유입경로)
+var REG_NO        = '';   // 노랑풍선 관광사업등록번호 (받으면 여기 입력)
+
+(function () {
+  // 등록번호 반영
+  if (REG_NO) {
+    var a = document.getElementById('regno1'), b = document.getElementById('regno2');
+    if (a) a.textContent = REG_NO;
+    if (b) b.textContent = REG_NO;
+  }
+
+  // 유입경로 — 페이지 주소의 ?src= 값을 그대로 폼에 전달
+  //   예) mm-travel.github.io/?src=insta  →  유입경로 = insta
+  var src = 'direct';
+  try {
+    var q = new URLSearchParams(location.search).get('src');
+    if (q) src = q.slice(0, 40);
+  } catch (e) {}
+
+  function formUrl(product) {
+    return 'https://docs.google.com/forms/d/e/' + FORM_ID + '/viewform?usp=pp_url'
+      + '&' + ENTRY_PRODUCT + '=' + encodeURIComponent(product)
+      + '&' + ENTRY_SOURCE  + '=' + encodeURIComponent(src);
+  }
+
+  // 상품 카드 버튼
+  var btns = document.querySelectorAll('.btn[data-product]');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].href = formUrl(btns[i].getAttribute('data-product'));
+    btns[i].target = '_blank';
+    btns[i].rel = 'noopener';
+  }
+
+  // 하단 CTA — 상품 미지정
+  var end = document.getElementById('endBtn');
+  if (end) { end.href = formUrl('상품 미지정'); end.target = '_blank'; end.rel = 'noopener'; }
+
+  // 스티키 버튼 — 히어로를 지나면 나타남
+  var sticky = document.getElementById('sticky');
+  var anchor = document.getElementById('products');
+  function onScroll() {
+    if (!sticky || !anchor) return;
+    var passed = window.scrollY > 320;
+    var atEnd  = anchor && (window.innerHeight + window.scrollY) > (document.body.scrollHeight - 420);
+    sticky.className = (passed && !atEnd) ? 'sticky on' : 'sticky';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
