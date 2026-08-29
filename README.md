@@ -1,2 +1,2 @@
 # mmtravel-desk.github.io
-노랑풍선여행사입니다.
+M.M 여행 — 대학생 방학 해외여행 소개 페이지
